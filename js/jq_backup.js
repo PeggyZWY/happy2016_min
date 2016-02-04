@@ -1,13 +1,59 @@
 $(function() {
-    $(".text").height(document.documentElement.clientHeight);
+    $("#content").height(document.documentElement.clientHeight);
+
+    $(".animation").text(""); // 测试时用
+    $height = $(window).height();
+    $width = $(window).width();
+    a = $width / $height;
+
+    // 设置帧后的颜色
+    $("#content :nth-child(7n+3)").css("background-color", "#FF6A4D");
+    $("#content :nth-child(7n+4)").css("background-color", "#FF894D");
+    $("#content :nth-child(7n+5)").css("background-color", "#FFAD4D");
+    $("#content :nth-child(7n+6)").css("background-color", "#FFD34D");
+    $("#content :nth-child(7n)").css("background-color", "#FFF14D");
+    $("#content :nth-child(7n+1)").css("background-color", "rgb(255,247,203");
+    $("#content :nth-child(7n+2), .pre").css("background-color", "#FF4D4D");
+    // 设置底部代码区背景
+    $(".text").css("background-color", "black");
+    $(".text").find("*").css("background-color", "black");
+
+
+    /* 
+    // ipad 1024 * 768   iphone6 375 * 627
+    alert($(window).scrollTop()); //15744（20.5个768）; forcast ip6:16.5*627=10346 real:10346 10346/627=16.5
+
+    alert($(document).scrollTop()); //15744
+
+    alert($(window).height()); //浏览器当前窗口可视区域高度 768 ; 627
+    alert($(document).height()); //浏览器当前窗口文档的高度 16512（21.5个768，因为a<1.4，隐藏了2个，就是(45-2)/2=21.5）; forcast ip6: 627*17.5=10973
+    alert($(document.body).height());//浏览器当前窗口文档body的高度 768 ;  627
+    //alert($(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin 768 ; 627
+    //alert($(window).width()); //浏览器当前窗口可视区域宽度 1024
+    //alert($(document).width());//浏览器当前窗口文档对象宽度 1024 
+    //alert($(document.body).width());//浏览器当前窗口文档body的宽度 1024
+    //alert($(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin 1024
+
+    */
+
 
 
     // 给页面滚动绑定事件：当最下面的代码区域出现打字效果，并开始计时，准备跳转下一页面
     //var $text = $(".text").remove();
 
+    $(window).scroll(function() {
+        if ($(document).scrollTop() + $(window).height() >= $(document).height() - 10) {
+            setTimeout(function() {
+                $("#content").append($text);
+            }, 500);
             setTimeout(function() {
                 location.href = "demo.html";
             }, 4500);
+            return false;
+        }
+    })
+
+
 
 })
 
