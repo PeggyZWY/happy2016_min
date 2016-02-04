@@ -225,7 +225,7 @@ webpackJsonp([1], {
                                     "value": "2016年开始，又许下了愿望，今年一定要让它实现!"
                                 }, {
                                     "name": "TODO",
-                                    "value": "be happy                                     ========== END =========="
+                                    "value": "be happy                                                            ========== END =========="
                                 },],
 
                                 "type": "event"
