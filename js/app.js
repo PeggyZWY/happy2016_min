@@ -13,7 +13,7 @@ webpackJsonp([1], {
                 e.timeline.unshift({
                     type: "text",
                     data: {
-                        text: "Username: " + "***" + "\nPassword: ********\nACCESS TO SYSTEM"
+                        text: "Username: " + "***" + "\nPassword: ********\nACCESS TO SYSTEM..."
                     },
                     config: {
                         effect: !0,
@@ -215,7 +215,8 @@ webpackJsonp([1], {
                                     "name": "tag",
                                     "value": ["young", "simple", "naive", "蛤？"]
                                 }]
-                            }, {
+                            },
+                            {
                                 "date": 1440383568,
                                 "data": [{
                                     "name": "<Date>",
@@ -230,7 +231,22 @@ webpackJsonp([1], {
 
                                 "type": "event"
                             },
+{
+"date": 1440383568,
+                                "data": [{
+                                    "name": "<Date>",
+                                    "value": "2016-01-01 00:00:00"
+                                }, {
+                                    "name": "event",
+                                    "value": "2016年开始，又许下了愿望，今年一定要让它实现!"
+                                }, {
+                                    "name": "TODO",
+                                    "value": "be happy                                                            ========== END =========="
+                                },],
 
+                                "type": "event"
+ 
+                            },
                         ],
 
                     };
