@@ -1,16 +1,3 @@
-$(function() {
-    $(".text").height(document.documentElement.clientHeight);
-
-
-    // 给页面滚动绑定事件：当最下面的代码区域出现打字效果，并开始计时，准备跳转下一页面
-    //var $text = $(".text").remove();
-
-            setTimeout(function() {
-                location.href = "demo.html";
-            }, 4500);
-
-})
-
 
 //以下是底部代码区打字机效果
 function Typing(opts) {

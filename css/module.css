@@ -26,13 +26,15 @@ nav a {
     text-decoration: none;
 }
 .text {
-    font-size: 3em;
     display: block;
     height: 100%;
     width: 100%;
     position: relative;
     text-align: center;
     background: black;
+}
+fi {
+    font-size: 3em;
 }
 #source {
     display: none;
@@ -72,23 +74,36 @@ nav a {
     color: #fff;
 }
 #output-wrap {
-    padding: 20px;
+    padding: 0 20px;
     color: white;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     text-align: left;
 }
-var {
+ye {
     color: #f2ea0e;
 }
-o {
+or {
     color: orange;
 }
-na {
+pi {
     color: rgb(249, 138, 162);
 }
-func {
+bl {
     color: rgb(87, 154, 198);
 }
-pa {
-    color: rgb(190, 226, 242);
+gr {
+    color: rgb(170,214,94);
+}
+
+lb {
+    color: rgb(183,219,240);
+}
+
+wh {
+    color: white;
+}
+
+smaller {
+    font-size: 1em;
+    line-height: 1.5em;
 }

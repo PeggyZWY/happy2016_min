@@ -14,15 +14,15 @@
 
 <body>
         <div class="text">
-        <fi>
+            <smaller>
             <div id="source">
-            <ye>var</ye> <or>$</or><pi>happy</pi> = <or>new</or> <bl>Year</bl> (<gr>2016</gr>);
+            <or>DELETE * FROM <pi>year_2015</pi><br />WHERE <pi>happiness</pi> <wh>=</wh> <gr>0</gr> AND <pi>sadness</pi> <wh>=</wh> <gr>1</gr><wh>;</wh><br />CREATE TABLE <bl>year_2016</bl><br />(<br /><pi>minute</pi> <ye>INT</ye> NOT NULL<wh>,</wh><br /><pi>happiness</pi> <ye>INT</ye> NOT NULL <pi>DEFAULT</pi> <lb>'1'</lb><wh>,</wh><br /><pi>sadness</pi> <ye>INT</ye> NOT NULL <pi>DEFAULT</pi> <lb>'0'</lb><br />)<wh>;</wh></or>
             </div>
             <div id="output-wrap">
                 <span id="output"></span>
                 <span class="typing-cursor-white">|</span>
             </div>
-        </fi>
+            </smaller>
         </div>
     <script type="text/javascript" src="js/jq.js"></script>
     <script type="text/javascript">
@@ -34,8 +34,8 @@
     //var $text = $(".text").remove();
 
             setTimeout(function() {
-                location.href = "second.html";
-            }, 4500);
+                location.href = "demo.html";
+            }, 18500);
 
 })</script>
 </body>
